@@ -1,0 +1,3 @@
+Naive
+Stage 1: dictionary building
+Stage 2: Partitioning and distance calculation
