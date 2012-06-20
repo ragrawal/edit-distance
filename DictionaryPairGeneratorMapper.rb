@@ -1,6 +1,6 @@
 require_relative "util.rb"
 
-tokenfile = "/Users/ragrawal/Desktop/desk/edit_distance/dictionary"
+tokenfile = "dictionary"
 @dictionary = {}
 
 File.open(tokenfile).each_line do |line|

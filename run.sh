@@ -10,7 +10,7 @@ echo "Stage 2: Partitioning and distance calculation"
 time cat queries.txt | ruby DictionaryPairGeneratorMapper.rb | sort -t$'\t' -k1,1 | ruby PairGeneratorReducer.rb > prefix_output.txt
 time cat queries.txt | ruby DictionaryPairGeneratorMapper.rb | sort -t$'\t' -k1,1 | ruby PairGeneratorReducer.rb > prefix_output.txt
 time cat queries.txt | ruby DictionaryPairGeneratorMapper.rb | sort -t$'\t' -k1,1 | ruby PairGeneratorReducer.rb > prefix_output.txt
-echo "Algorithm 3: Partitioning and distance calculation"
+echo "Single MapReduce"
 time cat queries.txt | ruby SimplePairGeneratorMapper.rb | sort -t$'\t' -k1,1 | ruby PairGeneratorReducer.rb > prefix_output.txt
 time cat queries.txt | ruby SimplePairGeneratorMapper.rb | sort -t$'\t' -k1,1 | ruby PairGeneratorReducer.rb > prefix_output.txt
 time cat queries.txt | ruby SimplePairGeneratorMapper.rb | sort -t$'\t' -k1,1 | ruby PairGeneratorReducer.rb > prefix_output.txt
