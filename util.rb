@@ -12,7 +12,7 @@ def compute(queries)
       #calculate jaccard edit distance
       t2 = q2.tokenize
       sim = (t1 & t2).length.to_f/(t1 | t2).length.to_f
-      puts "#{sim}\t#{q1}\t#{q2}" if sim > 0.0
+      puts "#{sim}\t#{q1}\t#{q2}" 
     end
   end
 end
